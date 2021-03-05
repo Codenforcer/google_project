@@ -11,46 +11,50 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <!-- First section is too setup the nav links-->
         <ul class="top-nav">
-            <li class = "left-top" ><a href="#">About</a></li>
-            <li class = "left-top" ><a href="#">Store</a></li>
-            <li class = "right-top"><a href="#"><img src="https://lh3.googleusercontent.com/ogw/ADGmqu8DM-fAvPZ9E0ha7Zja3Qv2LM18QWQHyjGspHNm=s32-c-mo" class="account" alt="Account access"/></a></li>
-            <li class = "right-top"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAV1BMVEX///8AAAD7+/sREREuLi4yMjIlJSVWVlYrKysxMTHm5uZZWVmUlJTc3Nw4ODikpKS1tbX09PRlZWWOjo5fX1+5ubmmpqbe3t47OztoaGjq6uoiIiK3t7chDFYjAAAC10lEQVR4nO2c4XKqMBBGjYpiQRRtrW3v+z/nre20w7SQrAusdD3n/9kxJISQfDibAQAAAAAAAAAAAMDdsi2L5SKExbIot6Nbx3V+sfL18QpLwnxXhQbVbj6mlTWtTGbJ2L+FH6yeDK19/xZ8UD/+LH3hUNtZjwlLxsOmrfZ7n7+OYC3brc3DAO1Ytdd+7/LIb1Jav4bVt9W7JXXHlf24up09rrQ6+uPCpu/oah2zXxymYMnYx2qH0DELjWL1mrvmnYP2k1XrHG9pCdnFa4dwMrR2PRpSpYqfh7OylFXp27FN1Q7h2dDSr7vKdPFyKOuosoQU6eLFUNZaZQmJPKC+yIay8rS1VDdkkS6+uK0lJF07hNta99YQN0PLzc3uZvp180Cc2BKlxZLiZdHoZxk/79xD+CRvf0UytKT8ixfveGnVWboXZCmHWO2XYa0xNx9mdeQerLo3dnSWahNJyqtqq01n6bb1xC3puLpVtLbO0m20SqlbR/xLajt6QCu19S3m6VeX54I5RGftVZaU+encLH0+yY5sdJbqeEjOc1lkl+OwrCivWPPorMaBXY/1FQAAAAAAAEAUUqbXW6RME5AyVVikTJOQMjWzZJAytbKEuDme9hIYmFiEg5Spn5iTm+CZmyhguvYfCWe6aYiboeXmZncz/bp5IE5siULK1NEynpSpxiJlKoKUqcYiZSqDlCkp06ZFyhQAAAAAAAAgji75aWlJ0CU/LS0ZuuSnpSVCl/y0tGTokp+WlrAdquSnpSVDl/y0tITcScq0Yz6xtGTcT8q09cjY0hKiO8S3tGTokp+WlhBd0MXSEqKLHllaQnRhMEtLiJsoYLr2HwlnummIm6Hl5mZ3M/26eSD6SZl6WTT6Wcb7SZlO6IPKnqktL5sPth8dj5oyNf0MfNSUqemH+TdImSb/9MDQEqNLflpaUmz/TmTclKku+WlpAQAAAAAAAAAAAIA3/gPOo1OwLkDOKgAAAABJRU5ErkJggg==" alt="Google Apps Access" width="17px" height="17px"/></a></li>
-            <li class = "right-top"><a href="#">Images</a></li>
-            <li class = "right-top"><a href="#">Gmail</a></li>
+            <li class = "left-top" ><a href="https://about.google/">About</a></li>
+            <li class = "left-top" ><a href="https://store.google.com/">Store</a></li>
+            <li class = "right-top"><a href="https://accounts.google.com/"><img src="https://lh3.googleusercontent.com/ogw/ADGmqu8DM-fAvPZ9E0ha7Zja3Qv2LM18QWQHyjGspHNm=s32-c-mo" id ="account-image" alt="Account access"/></a></li>
+            <li class = "right-top"><a href="https://gsuite.google.com/"><img alt="Apps Logo" id="apps" src="Images/nine-dots.jpg"></a></li>
+            <li class = "right-top"><a href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a></li>
+            <li class = "right-top"><a href="https://accounts.google.com/">Gmail</a></li>
         </ul>
             
             
-
-            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"/></div>
-            <div class="searchbar">
-                <div class="searchimg"><a href="#"><img src="Images/search.png" alt="Search Button" width="20px" height="20px"/></a></div>
-                <input type="text" placeholder="" class="searchform" />
+        <!--Main body of page to include google icon and search buttons-->
+        <!--google branding and search box-->
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"/></div>
+        <div class="search-area">
+            <form>
+                <input id="search-box" type="text">
+            </form>
+            <img id="mic-img" src="Images/voice.png" alt="voice-control">
+        </div>
                 
+        <!--search buttons-->
+        <div class="searchbuttons">
+            <button class="buttons" id="submit-button" type="submit">Google Search</button>
+        </div>
+        <div class="feelinglucky">
+            <button class="buttons" id="alternative_button" type="button">I'm Feeling Lucky</button>
+        </div>
 
-                <div class="voiceimg"><a href="#"><img src="Images/voice.png" alt="Voice Search" width="24px" height="24px"/></a></div>
-                <div class="searchbutton">
-                    <button class="buttons" type="submit">Google Search</button>
-                </div>
-                <div class="feelinglucky">
-                    <button class="buttons" type="button">I'm Feeling Lucky</button>
-                </div>
+        <!--Third section to organiser the footer tabs with 2x rows-->
+        <div class="footer-bar">
+            <div class="top-footer">Country</div>
+            <div class="footer-left">
+                <div class = "footer-tab"><a href="https://ads.google.com/">Advertising</a></div>
+                <div class = "footer-tab"><a href="https://www.google.com/business/">Business</a></div>
+                <div class = "footer-tab"><a href="https://www.google.com/search/howsearchworks/">How Search Works</a></div>
             </div>
-
-        <div class="footer_bar">
-            <div class = "higher_footer">Country</div>
-            <div class="footer_left">
-                <div class = "footer-tab"><a href="#">Advertising</a></div>
-                <div class = "footer-tab"><a href="#">Business</a></div>
-                <div class = "footer-tab"><a href="#">How Search Works</a></div>
+            <div class="footer-middle">
+                <div class = "footer-tab"><a href="https://sustainability.google/commitments-europe/">Carbon neutral since 2007</a></div>
             </div>
-            <div class="footer_middle">
-                <div class = "footer-tab"><a href="#">Carbon neutral since 2007</a></div>
-            </div>
-            <div class="footer_right">
-                <div class = "footer-tab"><a href="#">Privacy</a></div>
-                <div class = "footer-tab"><a href="#">Terms</a></div>
-                <div class = "footer-tab"><a href="#">Settings</a></div>
+            <div class="footer-right">
+                <div class = "footer-tab"><a href="https://policies.google.com/privacy">Privacy</a></div>
+                <div class = "footer-tab"><a href="https://policies.google.com/terms">Terms</a></div>
+                <div class = "footer-tab"><a href="">Settings</a></div>
             </div>
         </div>
     </body>
